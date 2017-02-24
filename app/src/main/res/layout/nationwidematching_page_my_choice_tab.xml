@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabhost">
+            <LinearLayout
+                android:id="@+id/choice_linear_layout"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <!-- 메뉴 하나하나 시작-->
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_height="wrap_content"
+                    android:tabStripEnabled="false"
+                    style="@style/tabTheme"
+                    android:layout_width="match_parent"/>
+                <!-- 메뉴 하나하나 끝-->
+                <!--본문 시작-->
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+                <!--본문 끝-->
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+</RelativeLayout>

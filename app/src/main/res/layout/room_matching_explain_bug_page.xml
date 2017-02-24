@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--디자인5-2.설명충-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--설명충 시작-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/room_explain_bug2"/>
+        <TextView
+            android:gravity="center"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  안녕? 내 이름은 설명충이야 \n 나는 너희들의 사랑지수를 관리하고 러브러브콩을 재배하고 있어.\n 너희들이 이용할 수 있는 서비스 및 스킬들을 소개해줄까 하는데..... \n설명충 답게 설명을 시작해볼까?"/>
+    </LinearLayout>
+    <!--설명충 끝-->
+    <!--사랑지수 설명 시작-->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/dote_love"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  사랑지수란?"/>
+    <TextView
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  * 사랑지수란, 원의 반경을 넓혀주는 스텟이다, \n 사랑지수가 10 증가할때마다 원의 반경이 1 증가한다 \n 참고로 사랑지수는 이성의 게시판에 글을 남기면 얻을 수 있다"/>
+    <!--사랑지수 설명 끝-->
+    <!--러브러브콩 설명 시작-->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:background="@drawable/room_panner_love_bean2"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  러브러브콩이란?"/>
+    <TextView
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  * 룸매칭 세계관에서 돈처럼 쓰이는 아이템"/>
+    <!--러브러브콩 설명 끝-->
+    <!--슈퍼룸 설명 시작-->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/room_panner_super_room"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  슈퍼룸이란?"/>
+    <TextView
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  * 러브러브콩을 1개 사용하여 1시간동안 Room의 크기를 2배 넓히는 필살기"/>
+    <!--슈퍼룸 설명 끝-->
+    <!--로얄룸 설명 시작-->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/room_panner_loyal_room"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  로얄룸이란?"/>
+    <TextView
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  * 사랑콩을 5개 사용하여 24시간 Room의 크기를 3배 넓히는 필살기"/>
+    <!--로얄룸 설명 끝-->
+    <!--러브러브 무빙 하우스 설명 시작-->
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:background="@drawable/moving_car"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  러브러브 무빙 하우스란?"/>
+    <TextView
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  * 사랑콩을 10개 미니홈피를 옮길 수 있는 필살기"/>
+    <!--슈퍼룸 설명 끝-->
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/color_green"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  긴글 읽어줘서 고맙다. 그럼 이만 ~"/>
+        <!--
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/room_explain_bug3"/>
+            -->
+    </LinearLayout>
+    <!--설명충 끝-->
+</LinearLayout>

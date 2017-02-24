@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/res_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="button"
+        android:text="start" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="30dp" />
+    </LinearLayout>
+    -->
+    <fragment
+        android:id="@+id/room_matching_page_minihome_list"
+        android:layout_width="80dip"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        class="com.example.lovef.newcatchmeifyoucan.Room_matching_page_minihome_fragment_contents" />
+    <!--이 플레그는 리스트 플레그를-->
+
+    <fragment
+        android:layout_marginTop="40dp"
+        android:id="@+id/room_matching_page_minihome_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.lovef.newcatchmeifyoucan.Room_matching_page_minihome_fragment"/>
+    <!--이 플레그멘트에는 내용물 플레그를-->
+    <!--class="com.example.lovef.newcatchmeifyoucan.Room_matching_page_minihome_fragment"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/res_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:onClick="button"
+            android:text="start" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+</LinearLayout>

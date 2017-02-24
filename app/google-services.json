@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "459122606422",
+    "firebase_url": "https://newcatchmeifyoucan.firebaseio.com",
+    "project_id": "newcatchmeifyoucan",
+    "storage_bucket": "newcatchmeifyoucan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459122606422:android:3f27303d907903ba",
+        "android_client_info": {
+          "package_name": "com.example.lovef.newcatchmeifyoucan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459122606422-p0e7msdtp9dg7g4dee93doufofq9jeif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSEa4rPUdLeEJR5qyAnqYn-UCWsEzJtoY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

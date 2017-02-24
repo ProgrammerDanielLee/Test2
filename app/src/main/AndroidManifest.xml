@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lovef.newcatchmeifyoucan">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /><!--스토리지 읽는 권한-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/><!--스토리지 쓰는 권한-->
+    <uses-permission android:name="android.hardware.camera" android:required="true"/><!--카메라 권한-->
+    <uses-permission android:name="android.permission.INTERNET"/><!--인터넷과 통신하는 권한-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/><!--wake lock이 뭔지 알아보기-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/><!--Network state permissions-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--facebook api(login을 위한) 시작-->
+        <!--Strings에 만들어 둔, 1234 이런식으로 되어있는 숫자를 참조하는 value값으로 meta-data를 구성한다-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/strings_facebook_app_id" />
+        <!--facebook api 끝-->
+        <!--흐음-->
+        <!--지도 API 시작-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!--지도 API 끝-->
+
+        <!--twitter login 시작-->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="368348ecb8089178b3c6fadf83bfe34be306008e" />
+        <!--twitter login 끝-->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Join_page"/>
+        <activity android:name=".Main_page"/>
+        <!--facebook login을 위한 activity 시작-->
+        <!--더 쉬운말로 하면 login 화면에서 facebook으로 넘어가는 acitivity ..name을 마음대로 지정할 수 없다.-->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"/>
+        <!--facebook login을 위한 acitivity 끝-->
+
+        <!--naver login을 위한 activity 시작-->
+        <!-- 쉽게 이야기하면, 네이버 아이디로 로그인에서 사용하는 액티비티를 등록 -->
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app"/>
+        <!--naver login을 위한 activity 끝-->
+        <activity android:name=".Privacy_page"/>
+        <activity android:name=".Nationwidematching_page"/>
+        <activity android:name=".Roommatching_page"/>
+        <activity android:name=".Chat_page"/>
+        <activity android:name=".Room_matching_page_minihome"/>
+        <activity android:name=".Room_matching_page_minihome_profile"/>
+        <activity android:name=".Privateinformation_page"/>
+        <activity android:name=".Room_matcihng_explain_bug_page"/>
+        <activity android:name=".Nationwidematching_page_view"/>
+        <activity android:name=".Nationwidematching_page_my_choice"/>
+        <activity android:name=".Nationwidematching_page_others_choice"/>
+        <activity android:name=".Nationwidematching_page_chatting"/>
+        <activity android:name=".Nationwidematching_page_others_choice_before"/>
+        <activity android:name=".Nationwidematching_page_others_choice_tab"/>
+        <activity android:name=".Nationwidematching_page_my_choice_tab"/>
+        <activity android:name=".Nationwidematching_page_my_choice_before"/>
+
+        <!--데이터 수신용 클래스 시작-->
+        <service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <!--데이터 수신용 클래스 끝-->
+
+        <!-- 토큰 리스너 클래스 시작-->
+        <service
+            android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <!--토큰 리스너 클래스 끝-->
+
+        <activity android:name=".MySQLiteOpenHelper"/>
+        <activity android:name=".Chatlist"/>
+    </application>
+</manifest>

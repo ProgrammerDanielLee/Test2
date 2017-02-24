@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_while</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/app_main_color</item>
+    </style>
+    <style name="tabTheme" parent="android:style/Theme">
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:tabWidgetStyle">@style/Widget.TabWidget</item>
+    </style>
+    <style name="Widget.TabWidget" parent="android:Theme">
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:background">@drawable/tab_under_line</item>
+    </style>
+    <!--facebook style 시작-->
+    <style name="facebook_login_button_style">
+        <item name="android:background">@drawable/activity_main_facebook_login_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--facebook style 끝-->
+
+    <!--google style 시작-->
+    <style name="google_login_button_style">
+        <item name="android:background">@drawable/activity_main_google_login_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--google style 끝-->
+    
+    <!--twitter style 시작-->
+    <style name="twitter_login_button_style">
+        <item name="android:background">@drawable/activity_main_twitter_login_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--twitter style 끝-->
+
+    <!--instagram style 시작-->
+    <style name="instagram_login_button_style">
+        <item name="android:background">@drawable/activity_main_instagram_login_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--instagram style 끝-->
+
+
+</resources>

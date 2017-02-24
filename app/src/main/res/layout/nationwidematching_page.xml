@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--디자인4.커플매칭시작-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--실제로 커플이 표시되는 listview-->
+    <ListView
+        android:id="@+id/nw_page_listview_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="80"
+        android:listSelector="@color/app_main_color2"
+        android:fontFamily="sans-serif"
+        android:divider="@color/nationwidematching_page_list_divider" />
+    <!--나중에 list 선택될때의 color를 고치혀려면 listSelector를, 리스트 사이사이의 선을 만지려면 divider를 건들면 된다-->
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/color_while"
+            android:background="@drawable/d_button_small"
+            android:id="@+id/nw_page_textview_meeting"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:text="오늘의 만남"/>
+        <!--
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/color_while"
+            android:background="@drawable/d_button_small"
+            android:id="@+id/nw_page_textview_lookup_my_choice"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:text="선 택 보 기"/>
+            -->
+        <TextView
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/color_while"
+            android:background="@drawable/d_button_small"
+            android:id="@+id/nw_page_textview_lookup_others_choice"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:text="결 과 보 기"/>
+        </LinearLayout>
+
+</LinearLayout>

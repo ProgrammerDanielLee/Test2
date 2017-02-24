@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title_my_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/app_main_color"
+        android:text="선택 보기"/>
+    <ImageView
+        android:id="@+id/underline_my_choice"
+        android:background="@drawable/minihome_mp3_background"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    <ListView
+        android:id="@+id/core_one_list_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="80"
+        android:listSelector="@color/app_main_color2"
+        android:fontFamily="sans-serif"
+        />
+</LinearLayout>

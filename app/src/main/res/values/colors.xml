@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="redcolor">#ED1C24</color>
+    <color name="color_green">#22B14C</color>
+    <color name="color_pink">#FEC1F2</color>
+    <color name="color_while">#FFFFFF</color>
+    <color name="color_softblue">#1280FC</color>
+    <color name="nationwidematching_page_list_item_selected">#E0D9F7</color>
+    <color name="nationwidematching_page_list_divider">#7D6DB5</color>
+    <color name="sliding_drawable_background_color">#4268BD</color>
+    <color name="app_main_color">#FC6265</color>
+    <color name="app_main_color2">#FEA7A9</color>
+</resources>

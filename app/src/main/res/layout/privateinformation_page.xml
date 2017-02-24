@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="얄리얄리얄랴셩얄랴리얄라"/>
+    <!--개인정보 동의 시작-->
+    <CheckBox
+        android:id="@+id/join_page_check_personalinfo"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_marginLeft="30dp"
+        android:text="개인정보 취급방침에 동의하십니까?"/>
+    <!--개인정보 동의 끝-->
+
+    <!--이용약관 시작-->
+    <CheckBox
+        android:id="@+id/join_page_check_useinfo"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="-10dp"
+        android:text=" 이용약관에 동의하십니까?"/>
+    <!--이용약관 끝-->
+
+</LinearLayout>

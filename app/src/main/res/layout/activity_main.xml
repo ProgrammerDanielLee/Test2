@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--디자인1.메인화면페이지(로그인페이지)-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/d_main_color"
+    tools:context="com.example.lovef.newcatchmeifyoucan.MainActivity">
+
+    <TextView
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:background="@drawable/d_main_title"
+        android:id="@+id/activity_main_button_main" />
+
+    <LinearLayout
+        android:id="@+id/activity_main_loginframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:textColor="@color/color_while"
+                android:textStyle="bold"
+                android:text="e-mail : "
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/activity_main_edittext_email"
+                android:inputType="textEmailSubject"
+                android:textColor="@color/color_while"
+                android:layout_width="200dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/activity_main_under_edittext_email"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_while"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:text="*잘못된 이메일 형식입니다"/>
+        <!--이메일 끝-->
+
+        <!--비밀번호 시작-->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textColor="@color/color_while"
+                android:textStyle="bold"
+                android:text="password : "
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/activity_main_edittext_password"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:textColor="@color/color_while"
+                android:inputType="textPassword" />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/activity_main_under_edittext_password"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_while"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:text="*잘못된 비밀번호 형식입니다"/>
+
+    <!--비밀번호 끝-->
+        <!--회원가입,로그인 버튼 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_width="35dp"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="JOIN"
+                android:textColor="@color/color_while"
+                android:background="@drawable/d_button_small"
+                android:id="@+id/activity_main_button_join" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="35dp"
+                android:layout_weight="50"
+                android:layout_height="50dp"
+                android:textColor="@color/color_while"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="SIGN UP"
+                android:background="@drawable/d_button_small"
+                android:id="@+id/activity_main_button_signup"/>
+        </LinearLayout>
+
+        <!--SNS login 시작-->
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!--facebook login button 시작-->
+            <FrameLayout
+                android:id="@+id/FrameFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/activity_main_facebook_login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+                <ImageButton
+                    android:id="@+id/custom_fb_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    style="@style/facebook_login_button_style"/>
+            </FrameLayout>
+            <!--facebook login button 끝-->
+
+            <!--google login button 시작-->
+            <FrameLayout
+                android:id="@+id/Frame_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/activity_main_google_login_button"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+                <ImageButton
+                    android:id="@+id/custom_google_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    style="@style/google_login_button_style"/>
+            </FrameLayout>
+            <!--google login button 끝-->
+
+            <!--twitter login button 시작-->
+            <FrameLayout
+                android:id="@+id/Frame_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                    style="@style/twitter_login_button_style"
+                    android:id="@+id/twitter_login_button"
+                    android:visibility="gone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"/>
+                <ImageButton
+                    android:id="@+id/custom_twitter_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    style="@style/twitter_login_button_style"/>
+            </FrameLayout>
+            <!--twitter login button 끝-->
+
+            <!--instagram login button 시작-->
+
+            <!--instagram login button 끝-->
+
+            <!--naver login button 시작-->
+            <FrameLayout
+                android:id="@+id/Frame_naver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                    android:id="@+id/buttonOAuthLoginImg"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <!--
+                <ImageButton
+                    android:id="@+id/custom_naver_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    style="@style/twitter_login_button_style"/>
+                    -->
+            </FrameLayout>
+            <!--naver login button 끝-->
+
+        </LinearLayout>
+        <!--SNS login 끝-->
+    </LinearLayout>
+</RelativeLayout>
